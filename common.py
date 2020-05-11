@@ -41,23 +41,23 @@ def idConv(tickerName, ticker_list, insId_list):
 
 
 
-def getCountry(id):
-    for item in dataCountries['countries']:
+def getCountry(id, dataCountries):
+    for item in dataCountries:
         if item['id'] == id:
             break
     return item['name']
 
 
 
-def getMarket(id):
-    for item in dataMarkets['markets']:
+def getMarket(id, dataMarkets):
+    for item in dataMarkets:
         if item['id'] == id:
             break
     return item['name']
 
 
-def getSector(id):
-    for item in dataSectors['sectors']:
+def getSector(id, dataSectors):
+    for item in dataSectors:
         if item['id'] == id:
             break
     return item['name']
